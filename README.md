@@ -1,4 +1,4 @@
-live link = https://priyansh-covid19tracker.netlify.app
+live link = https://aishwarya-covid19tracker.netlify.app/
 
 
 ## Available Scripts
