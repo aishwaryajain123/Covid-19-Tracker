@@ -24,6 +24,7 @@ function InfoBoxs() {
           if(country !== "worldwide")
           setCenter([data.countryInfo.lat, data.countryInfo.long]);
         });
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   } , [country])
   const setCases = (type) => {
     setCasesType(type);

@@ -1,10 +1,5 @@
 import React,{ useState, useEffect } from 'react'
 import "./NavBar.css";
-import {
-  MenuItem,
-  FormControl,
-  Select
-} from "@material-ui/core";
 import SearchBar from "../../components/SearchBar/SearchBar"
 import { useAllCountries,useSelectCountry  , useTableData} from '../../contexts/CountryContext';
 import {sortData} from '../../util'
@@ -16,6 +11,7 @@ import Brightness4TwoToneIcon from '@material-ui/icons/Brightness4TwoTone';
 
 function NavBar() {
   const {darkTheme, setDarkTheme} = useDarkTheme();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const {country, setCountry} = useSelectCountry();
   const {countries , setCountries } = useAllCountries();
   const {setTableData} = useTableData();
@@ -37,13 +33,14 @@ function NavBar() {
         });
     };
     getCountriesData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   
 
   const onCountryChange = (inputcountry) => {
     setCountry(inputcountry);
     console.log(inputcountry);
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }
   const changeTheme = () => {
     setDarkTheme(pervState => !pervState);

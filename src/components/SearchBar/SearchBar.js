@@ -3,7 +3,6 @@ import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import SearchIcon from '@material-ui/icons/Search';
 import "./Searchbar.css";
-import BackDrop from '../../containers/BackDrop/BackDrop';
 import {useSelectCountry} from '../../contexts/CountryContext';
 
 

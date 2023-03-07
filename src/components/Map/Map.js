@@ -12,6 +12,7 @@ if(map)
 {
   map.flyTo(center,5);
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps
 },[center]);
 
   return (
