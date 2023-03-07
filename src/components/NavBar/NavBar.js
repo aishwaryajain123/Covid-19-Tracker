@@ -11,7 +11,7 @@ import Brightness4TwoToneIcon from '@material-ui/icons/Brightness4TwoTone';
 
 function NavBar() {
   const {darkTheme, setDarkTheme} = useDarkTheme();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+   // eslint-disable-next-line no-unused-vars
   const {country, setCountry} = useSelectCountry();
   const {countries , setCountries } = useAllCountries();
   const {setTableData} = useTableData();
@@ -36,7 +36,7 @@ function NavBar() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   
-
+   // eslint-disable-next-line no-unused-vars
   const onCountryChange = (inputcountry) => {
     setCountry(inputcountry);
     console.log(inputcountry);
